@@ -8,5 +8,4 @@ export const addRoutes = (router: RouterMiddleware.Router<StoreValsContext>) => 
 		this.storeVal('title', IndexPageTitle);
 		return new Response(<Index />);
 	});
-
 };

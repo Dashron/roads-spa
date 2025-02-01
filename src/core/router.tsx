@@ -21,7 +21,6 @@ export async function navigate(urlPath: string) {
 
 	window.history.pushState({},"", urlPath);
 	renderPath(window.location.pathname);
-	
 }
 
 /**

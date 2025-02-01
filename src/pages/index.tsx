@@ -4,6 +4,17 @@ export const title = 'Home';
 
 export function Index(props: {}) {
 	return (
-		<div>Hi</div>
+		<div>
+			<div>
+				Hi!
+			</div>
+			<div>
+				<a href="/firstPage">Check out the next page.</a>
+			</div>
+			<div>
+				<a href="https://github.com/Dashron/roads-spa">Or the roads-spa github</a>
+			</div>
+		</div>
+
 	);
 }
