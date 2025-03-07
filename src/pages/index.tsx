@@ -9,7 +9,7 @@ export function Index(props: {}) {
 				Hi!
 			</div>
 			<div>
-				<a href="/firstPage">Check out the next page.</a>
+				<a href="/firstpage">Check out the next page.</a>
 			</div>
 			<div>
 				<a href="https://github.com/Dashron/roads-spa">Or the roads-spa github</a>
