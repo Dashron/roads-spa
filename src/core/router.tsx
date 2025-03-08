@@ -4,7 +4,7 @@ import { createRoot, Root } from 'react-dom/client';
 import { Road, RoadsPJAX, RouterMiddleware, CookieMiddleware, attachCommonMiddleware } from 'roads';
 import { addRoutes } from '../pages/routes';
 
-import { NotFoundComponent } from '../pages/notFound';
+import { NotFoundComponent } from '../pages/components/notFound';
 
 let root: Root;
 let road: Road;
@@ -61,6 +61,11 @@ export function init() {
  */
 export async function renderPath(path: string) {
 	return road.request('GET', path).then((response) => {
+		if (response.status === 404) {
+			window.location.href = '/404';
+			return;
+		}
+
 		root.render(response.body);
 	});
 }

@@ -4,12 +4,12 @@ export const title = 'First Page';
 
 export function FirstPage(props: {}) {
 	return (
-		<div>
-			<div>
+		<div className="flex flex-col items-center">
+			<div className="mt-12 text-2xl">
 				Hi!
 			</div>
-			<div>
-				<a href="/">Check out the home page.</a>
+			<div className="mt-8 text-lg">
+				This is the first page
 			</div>
 		</div>
 	);
